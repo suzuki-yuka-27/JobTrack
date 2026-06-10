@@ -26,5 +26,10 @@
 ## ER図
 
 ## 画面遷移図
+<img width="600" height="700" alt="Job Track" src="https://github.com/user-attachments/assets/9f98f73b-399c-4261-9550-7a662c7e2b67" />
+
+[Figmaで開く](https://www.figma.com/board/Jitq9INvGLKXGo7eVglpLU/Job-Track?node-id=9-1307&t=jz9xCDBzhTAIdDHs-0)
+
+## ワイヤーフレーム
 
 ## 工夫した点

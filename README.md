@@ -23,6 +23,74 @@
 - OpenAI API
 - Docker
 
+## テーブル定義
+
+### users
+| カラム名 | 型 | 説明 |
+|----------|----|------|
+| id | bigint | ユーザーID |
+| name | varchar(255) | ユーザー名 |
+| email | varchar(255) | メールアドレス |
+| password | varchar(255) | パスワード |
+| created_at | timestamp | 作成日時 |
+| updated_at | timestamp | 更新日時 |
+
+### social_accounts
+| カラム名 | 型 | 説明 |
+|----------|----|------|
+| id | bigint | ソーシャルアカウントID |
+| user_id | bigint | ユーザーID |
+| provider | int | ソーシャルアカウントの種類 |
+| created_at | timestamp | 作成日時 |
+| updated_at | timestamp | 更新日時 |
+
+### job_applications
+| カラム名 | 型 | 説明 |
+|----------|----|------|
+| id | bigint | 転職記録ID |
+| company_id | bigint | 企業記録ID |
+| interview_id | bigint | 面接記録ID |
+| status | int | 転職ステータス |
+| interest_level | int | 志望度 |
+| phase | int | 面接フェーズ |
+| interview_date | datetime | 面接日 |
+| application_source | varchar(100) | 応募媒体 |
+| created_at | timestamp | 作成日時 |
+| updated_at | timestamp | 更新日時 |
+
+### companies
+| カラム名 | 型 | 説明 |
+|----------|----|------|
+| id | bigint | 企業ID |
+| task_id | bigint | タスクID |
+| name | varchar(100) | 企業名 |
+| company_url | varchar(255) | 企業URL |
+| interview_times | int | 面接回数 |
+| reference_url | text | 参考資料 |
+| created_at | timestamp | 作成日時 |
+| updated_at | timestamp | 更新日時 |
+
+### interviews
+| カラム名 | 型 | 説明 |
+|----------|----|------|
+| id | bigint | 面接記録ID |
+| questions | text | 質問 |
+| rating | int | 評価 |
+| memo| text | 振り返りメモ |
+| created_at | timestamp | 作成日時 |
+| updated_at | timestamp | 更新日時 |
+
+### tasks
+| カラム名 | 型 | 説明 |
+|----------|----|------|
+| id | bigint | タスクID |
+| name | varchar(100) | タスク名 |
+| content | text | タスク内容 |
+| status | int | ステータス |
+| due_date | date | 締切日 |
+| created_at | timestamp | 作成日時 |
+| updated_at | timestamp | 更新日時 |
+
 ## ER図
 
 ## 画面遷移図

@@ -93,6 +93,7 @@
 | updated_at | timestamp | 更新日時 |
 
 ## ER図
+<img width="500" height="700" alt="Job_Track" src="https://github.com/user-attachments/assets/84fe867a-4116-40bb-ba60-5aa1887f0328" />
 
 ## 画面遷移図
 <img width="600" height="700" alt="Job Track" src="https://github.com/user-attachments/assets/9f98f73b-399c-4261-9550-7a662c7e2b67" />

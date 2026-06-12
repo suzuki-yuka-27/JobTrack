@@ -48,8 +48,8 @@
 | カラム名 | 型 | 説明 |
 |----------|----|------|
 | id | bigint | 転職記録ID |
+| user_id | bigint | ユーザーID |
 | company_id | bigint | 企業記録ID |
-| interview_id | bigint | 面接記録ID |
 | status | int | 転職ステータス |
 | interest_level | int | 志望度 |
 | phase | int | 面接フェーズ |
@@ -62,7 +62,6 @@
 | カラム名 | 型 | 説明 |
 |----------|----|------|
 | id | bigint | 企業ID |
-| task_id | bigint | タスクID |
 | name | varchar(100) | 企業名 |
 | company_url | varchar(255) | 企業URL |
 | interview_times | int | 面接回数 |
@@ -74,6 +73,7 @@
 | カラム名 | 型 | 説明 |
 |----------|----|------|
 | id | bigint | 面接記録ID |
+| job_application_id | bigint | 転職記録ID |
 | questions | text | 質問 |
 | rating | int | 評価 |
 | memo| text | 振り返りメモ |
@@ -84,6 +84,7 @@
 | カラム名 | 型 | 説明 |
 |----------|----|------|
 | id | bigint | タスクID |
+| job_application_id | bigint | 転職記録ID |
 | name | varchar(100) | タスク名 |
 | content | text | タスク内容 |
 | status | int | ステータス |
